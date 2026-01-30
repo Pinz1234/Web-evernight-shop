@@ -1,7 +1,6 @@
 export default function Footer() {
   return (
-    <footer className="w-full py-10 text-center text-sm opacity-60">
+    <footer className="text-center py-10 opacity-60">
       © EVERNIGHT SHOP
     </footer>
   );
-}
