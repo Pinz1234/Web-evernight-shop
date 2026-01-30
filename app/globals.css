@@ -1,0 +1,28 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  @apply bg-black text-white antialiased overflow-x-hidden;
+}
+
+.glass {
+  @apply bg-white/5 backdrop-blur-xl border border-white/10 rounded-2xl;
+}
+
+.cyber-bg {
+  background:
+    radial-gradient(circle at top left, rgba(168,85,247,0.25), transparent 40%),
+    radial-gradient(circle at bottom right, rgba(236,72,153,0.25), transparent 40%);
+}
+
+.room {
+  @apply glass p-8 shadow-aura transition-all;
+}
+
+.room:hover {
+  transform: translateY(-6px);
+  box-shadow:
+    0 0 40px rgba(168,85,247,0.45),
+    0 0 60px rgba(236,72,153,0.25);
+}
